@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../stylesheets/Profile.css">
+  <link rel="stylesheet" href="../public/images/akash2.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="background" id="parallax-bg"></div>
+  <div class="card">
+    <div class="cover-bg"></div>
+    <div class="user-info-wrap">
+      <div class="user-photo"></div>
+      <div class="user-info">
+        <div class="user-name">Akash Sahu</div>
+        <div class="user-title">Web Developer</div>
+      </div>
+    </div>
+    <div class="user-bio">
+      <p>
+        Hey there! 👋 I'm a passionate web developer and programmer, always on the lookout for exciting challenges in the digital realm. My code is my canvas, where I bring ideas to life and create seamless online experiences.
+      </p>
+      <p>
+        As a tech enthusiast, I find joy in unraveling the intricacies of programming languages and building robust applications. Whether it's front-end magic with HTML, CSS, and JavaScript, or diving into the backend with Python and Node.js, I'm up for the adventure.
+      </p>
+      <p>
+        Beyond the screen, you'll catch me exploring the world, fueled by a love for travel and a good cup of coffee. I'm a firm believer in the power of music to inspire creativity and a dedicated foodie who enjoys the art of gastronomy. When not coding, you might find me immersed in a gaming world, seeking new challenges.
+      </p>
+      <p>
+        Let's connect and explore the endless possibilities of the web together! 🚀
+      </p>
+      <div class="social">
+        <div class="social-icons">
+          <a href="" class="fa"><i class="fa fa-behance-square"></i></a>
+          <a href="" class="fa"><i class="fa fa-facebook-square"></i></a>
+          <a href="" class="fa"><i class="fa fa-linkedin-square"></i></a>
+          <a href="" class="fa"><i class="fa fa-dribbble"></i></a>
+        </div>
+
+        <div class="message">
+          <a href="/logout">Clik to logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var $parallaxBg = $("#parallax-bg");
+
+    function parallax() {
+      $(window).on("scroll", function () {
+        $parallaxBg.css("top", $(window).scrollTop() * -0.5);
+      });
+    }
+
+    $(document).ready(function () {
+      parallax();
+    });
+
+  </script>
+</body>
+
+</html>

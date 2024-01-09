@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: none;
+}
+.background {
+  background: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80') no-repeat center top;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0.5;
+}
+.background:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.5;
+}
+.card {
+  margin: 70px auto 200px;
+  width: 520px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+.cover-bg {
+  width: 100%;
+  height: 120px;
+  background: #b4e2d6;
+  background: url('https://images.pexels.com/photos/131683/pexels-photo-131683.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center;
+  background-size: 260%;
+  border-radius: 5px 5px 0 0;
+}
+.user-info {
+  padding-left: 16px;
+  padding-top: 10px;
+}
+.user-info-wrap {
+  margin-top: -35px;
+  display: flex;
+  padding: 0 20px;
+}
+.user-name {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 5px 5px 10px #0a0a0a;
+  margin-top: -8px;
+}
+.user-title {
+  font-size: 25px;
+  font-weight: 500;
+  color: #535251;
+  text-shadow: 0px 5px 10px #74caea;
+  display: block;
+  margin-top: 10px;
+}
+.user-photo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background:#fff url("/images/akash2.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.user-bio {
+  padding: 15px;
+}
+.user-bio p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons {
+  display: flex;
+}
+.social a {
+  display: block;
+  height: 40px;
+  font-size: 30px;
+  color: #8a8989;
+  margin-right: 13px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.social a .fa {
+  height: 32px;
+}
+.social a:hover {
+  color: #307e75;
+}
+.social .message a {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.social .message a:hover{
+  color: #ec1405;
+}
